@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Scale, Shield, Users, CheckCircle, Gavel, BookOpen, MapPin } from 'lucide-react'
 
 export default function Hero() {
@@ -24,17 +25,32 @@ export default function Hero() {
       aria-label="Hero section with main company information"
       role="banner"
     >
+      {/* Background Image with Overlays */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/team/optimized/partners-hero.jpg"
+          alt="FNM Law Advocates Partners - Fiona and Maureen"
+          fill
+          className="object-cover object-[center_15%] opacity-30"
+          priority
+          quality={80}
+        />
+      </div>
+
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 hero-image-overlay"></div>
+
       {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10 z-[3]">
         <div className="absolute inset-0 bg-gradient-to-r from-fnm-gold/20 to-transparent"></div>
         <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-fnm-gold/10 blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-fnm-gold/5 blur-3xl"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 z-[4]">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div>
+          <div className="relative z-10">
             <motion.div {...fadeIn}>
               <h1 className="text-4xl lg:text-6xl font-serif font-bold leading-tight mb-6">
                 Professional <span className="text-fnm-gold">Legal Services</span> in Nairobi

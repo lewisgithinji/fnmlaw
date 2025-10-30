@@ -118,7 +118,7 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="en-KE">
+    <html lang="en-KE" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -127,7 +127,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased">
+      <body className="antialiased" suppressHydrationWarning>
         {children}
       </body>
     </html>

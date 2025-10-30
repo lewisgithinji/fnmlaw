@@ -54,7 +54,10 @@ export default function NewsletterSignup({
     return (
       <div className={`bg-fnm-white rounded-lg p-6 shadow-lg ${className}`}>
         {showTitle && (
-          <h3 className="text-lg font-serif font-bold text-fnm-black mb-4">Legal Updates</h3>
+          <>
+            <h3 className="text-lg font-serif font-bold text-fnm-black mb-2">Legal Updates</h3>
+            <p className="text-fnm-gray-600 text-xs mb-4">Get legal insights in your inbox</p>
+          </>
         )}
 
         <form onSubmit={handleSubmit} className="space-y-3">

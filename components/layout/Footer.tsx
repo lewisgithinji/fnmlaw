@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
-import NewsletterSignup from '../ui/NewsletterSignup'
 
 export default function Footer() {
   const practiceAreas = [
@@ -37,15 +36,15 @@ export default function Footer() {
                 Commissioners for Oath & Notaries Public
               </p>
             </div>
-            <p className="text-fnm-gray-300 mb-6 leading-relaxed">
+            <p className="text-fnm-gray-300 mb-6 leading-relaxed text-sm">
               Professional legal services with integrity and excellence.
               We are committed to providing comprehensive legal solutions
               tailored to your specific needs.
             </p>
-            <div className="mt-8">
+            <div className="mt-6">
               <Link
                 href="/booking"
-                className="inline-block bg-fnm-gold text-fnm-black px-6 py-3 rounded-lg font-semibold hover:bg-fnm-gold/90 transition-colors duration-200"
+                className="inline-block bg-fnm-gold text-fnm-black px-6 py-3 rounded-lg font-semibold hover:bg-fnm-gold/90 transition-colors duration-200 text-sm"
               >
                 Schedule Consultation
               </Link>
@@ -127,11 +126,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-        {/* Newsletter Signup Section */}
-        <div className="mt-12 pt-8 border-t border-fnm-gray-800">
-          <NewsletterSignup />
-        </div>
       </div>
 
       {/* Map section */}
@@ -174,7 +168,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-fnm-gray-400">
             <div>
-              © 2024 FNM Law Advocates LLP. All rights reserved.
+              © 2025 FNM Law Advocates LLP. All rights reserved.
             </div>
             <div className="flex flex-col md:flex-row gap-6 mt-4 md:mt-0 items-center">
               <div className="flex gap-6">

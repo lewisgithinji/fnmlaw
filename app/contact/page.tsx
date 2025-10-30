@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Layout from '../../components/layout/Layout'
 import {
   Phone,
@@ -155,6 +156,33 @@ export default function ContactPage() {
             <p className="text-xl text-fnm-gray-600 max-w-3xl mx-auto">
               Multiple ways to reach our legal team. Choose the method that works best for you.
             </p>
+          </motion.div>
+
+          {/* Partner Image with Welcome Message */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="flex justify-center mb-16"
+          >
+            <div className="text-center max-w-md">
+              <div className="mb-6 flex justify-center">
+                <div className="contact-image-circle w-48 h-48 relative overflow-hidden">
+                  <Image
+                    src="/images/team/optimized/maureen-contact.jpg"
+                    alt="Maureen Auma Nekesa Nasiboye - Partner at FNM Law Advocates"
+                    fill
+                    className="object-cover object-center"
+                    quality={85}
+                  />
+                </div>
+              </div>
+              <h3 className="text-2xl font-serif font-bold text-fnm-black mb-2">We're Here to Help</h3>
+              <p className="text-fnm-gray-600 italic">
+                "Our team is ready to provide you with expert legal guidance and support."
+              </p>
+              <p className="text-fnm-gold font-semibold mt-2">- Maureen Auma Nekesa Nasiboye, Partner</p>
+            </div>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">

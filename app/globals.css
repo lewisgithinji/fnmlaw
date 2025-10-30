@@ -227,4 +227,142 @@ body {
   .content-section:nth-child(odd) {
     @apply bg-section-primary;
   }
+
+  /* Image Overlay Styles for Team Photos */
+
+  /* Hero section with background image */
+  .hero-image-container {
+    @apply relative overflow-hidden;
+  }
+
+  .hero-image-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.75) 100%
+    );
+    z-index: 1;
+  }
+
+  .hero-image-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(212, 175, 55, 0.15) 0%,
+      transparent 50%,
+      rgba(212, 175, 55, 0.1) 100%
+    );
+    z-index: 2;
+    mix-blend-mode: overlay;
+  }
+
+  /* Team card image overlay */
+  .team-card-image-overlay {
+    @apply relative overflow-hidden;
+  }
+
+  .team-card-image-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      transparent 60%,
+      rgba(212, 175, 55, 0.05) 100%
+    );
+  }
+
+  /* Vignette overlay for section backgrounds */
+  .vignette-overlay {
+    @apply relative;
+  }
+
+  .vignette-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at center,
+      transparent 40%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+    pointer-events: none;
+  }
+
+  /* Gold border accent */
+  .gold-accent-top {
+    border-top: 3px solid;
+    border-image: linear-gradient(
+      90deg,
+      rgba(212, 175, 55, 0.3),
+      #D4AF37,
+      rgba(212, 175, 55, 0.3)
+    ) 1;
+  }
+
+  /* Image container with subtle effects */
+  .image-container-styled {
+    @apply relative overflow-hidden rounded-lg;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .image-container-styled::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 2px solid rgba(212, 175, 55, 0.2);
+    border-radius: inherit;
+    pointer-events: none;
+  }
+
+  /* About hero background with heavy overlay */
+  .about-hero-bg {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  .about-hero-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.88) 0%,
+      rgba(31, 41, 55, 0.85) 100%
+    );
+    z-index: 1;
+  }
+
+  .about-hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(212, 175, 55, 0.08);
+    z-index: 2;
+  }
+
+  .about-hero-bg > * {
+    position: relative;
+    z-index: 3;
+  }
+
+  /* Contact page circular image */
+  .contact-image-circle {
+    @apply rounded-full border-4 border-fnm-gold shadow-2xl;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .contact-image-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+  }
 }

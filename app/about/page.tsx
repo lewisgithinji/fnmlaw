@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Layout from '../../components/layout/Layout'
 import { Users, Scale, Award, Target, Eye, Heart, CheckCircle } from 'lucide-react'
 
@@ -23,7 +24,7 @@ export default function AboutPage() {
         "Probate & Estate Planning"
       ],
       education: "Currently pursuing Company Secretary certification",
-      image: "/images/team/fiona.jpg" // Placeholder path
+      image: "/images/team/optimized/fiona-profile.jpg"
     },
     {
       name: "Maureen Auma Nekesa Nasiboye",
@@ -34,7 +35,7 @@ export default function AboutPage() {
         "Insurance Law"
       ],
       education: "Currently pursuing MBA at Nexford University",
-      image: "/images/team/maureen.jpg" // Placeholder path
+      image: "/images/team/optimized/maureen-profile.jpg"
     },
     {
       name: "Abigael Mbesa Kimanzi",
@@ -46,7 +47,7 @@ export default function AboutPage() {
         "Commercial Contracts"
       ],
       education: "Legal Practice & Commercial Law",
-      image: "/images/team/abigael.jpg" // Placeholder path
+      image: "/images/team/abigael.jpg" // Placeholder - no photo provided
     }
   ]
 
@@ -203,10 +204,25 @@ export default function AboutPage() {
                 whileHover={{ y: -12, scale: 1.03 }}
                 className="card-premium overflow-hidden group cursor-pointer relative hover-lift"
               >
-                {/* Profile Image Placeholder */}
-                <div className="h-64 bg-gradient-to-br from-fnm-gold/20 to-fnm-gray-200 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-fnm-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <Users size={60} className="text-fnm-gold opacity-50 group-hover:opacity-70 group-hover:scale-110 transition-all duration-300" />
+                {/* Profile Image */}
+                <div className="h-80 relative overflow-hidden team-card-image-overlay">
+                  {member.image.includes('abigael') ? (
+                    // Placeholder for Abigael (no photo provided)
+                    <div className="h-full bg-gradient-to-br from-fnm-gold/20 to-fnm-gray-200 flex items-center justify-center">
+                      <div className="absolute inset-0 bg-fnm-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <Users size={60} className="text-fnm-gold opacity-50 group-hover:opacity-70 group-hover:scale-110 transition-all duration-300" />
+                    </div>
+                  ) : (
+                    <Image
+                      src={member.image}
+                      alt={`${member.name} - ${member.position}`}
+                      fill
+                      className={`object-cover group-hover:scale-110 transition-transform duration-500 ${
+                        member.name.includes('Fiona') ? 'object-[center_20%]' : 'object-[center_30%]'
+                      }`}
+                      quality={85}
+                    />
+                  )}
                 </div>
 
                 <div className="p-6 relative">
