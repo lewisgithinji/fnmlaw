@@ -52,8 +52,8 @@ export default function Header() {
     <motion.header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-fnm-gray-900/95 backdrop-blur-lg shadow-2xl'
-          : 'bg-gradient-to-b from-fnm-gray-900 via-fnm-gray-800 to-fnm-gray-700 shadow-lg'
+          ? 'bg-fnm-black/95 backdrop-blur-lg shadow-2xl'
+          : 'bg-fnm-black shadow-lg'
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -169,7 +169,7 @@ export default function Header() {
             {/* Mobile Menu */}
             <motion.div
               id="mobile-menu"
-              className="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-fnm-gray-900 lg:hidden z-50 shadow-2xl"
+              className="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-fnm-black lg:hidden z-50 shadow-2xl"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
