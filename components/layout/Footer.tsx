@@ -30,7 +30,7 @@ export default function Footer() {
             <div className="mb-6">
               <h3 className="text-2xl font-serif font-bold mb-2">
                 <span className="text-fnm-white">FNM</span>
-                <span className="text-fnm-gold"> Law Advocates</span>
+                <span className="text-fnm-gold"> Law Advocates LLP</span>
               </h3>
               <p className="text-fnm-gold text-sm">
                 Commissioners for Oath & Notaries Public

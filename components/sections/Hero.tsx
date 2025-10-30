@@ -29,7 +29,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/images/team/optimized/partners-hero.jpg"
-          alt="FNM Law Advocates Partners - Fiona and Maureen"
+          alt="FNM Law Advocates LLP Partners - Fiona and Maureen"
           fill
           className="object-cover object-[center_15%] opacity-30"
           priority

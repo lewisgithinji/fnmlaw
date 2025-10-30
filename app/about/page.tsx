@@ -76,7 +76,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeIn} className="text-center">
             <h1 className="text-4xl lg:text-6xl font-serif font-bold mb-6">
-              About <span className="text-fnm-gold">FNM Law Advocates</span>
+              About <span className="text-fnm-gold">FNM Law Advocates LLP</span>
             </h1>
             <p className="text-xl lg:text-2xl text-fnm-gray-300 max-w-4xl mx-auto leading-relaxed">
               A leading law firm in Kenya, committed to providing exceptional legal services
@@ -274,7 +274,7 @@ export default function AboutPage() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-4xl lg:text-5xl font-serif font-bold text-fnm-black mb-6">
-                Why Choose <span className="text-fnm-gold">FNM Law Advocates?</span>
+                Why Choose <span className="text-fnm-gold">FNM Law Advocates LLP?</span>
               </h2>
 
               <div className="space-y-6">

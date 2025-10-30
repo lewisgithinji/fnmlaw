@@ -123,7 +123,7 @@ export default function HomePage() {
               <div className="image-container-styled overflow-hidden rounded-2xl">
                 <Image
                   src="/images/team/optimized/partners-friendly.jpg"
-                  alt="Fiona and Maureen - FNM Law Advocates Partners"
+                  alt="Fiona and Maureen - FNM Law Advocates LLP Partners"
                   width={600}
                   height={800}
                   className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
@@ -140,7 +140,7 @@ export default function HomePage() {
               className="order-1 lg:order-2"
             >
               <h2 className="text-4xl lg:text-5xl font-serif font-bold text-fnm-black mb-6">
-                Why Choose <span className="text-fnm-gold">FNM Law Advocates?</span>
+                Why Choose <span className="text-fnm-gold">FNM Law Advocates LLP?</span>
               </h2>
               <div className="space-y-6 mb-8">
                 <div className="flex items-start gap-4">

@@ -93,7 +93,7 @@ export default function Header() {
           <Link href="/" className="flex-shrink-0">
             <div className="text-2xl lg:text-3xl font-serif font-bold">
               <span className="text-fnm-white">FNM</span>
-              <span className="text-fnm-gold"> Law Advocates</span>
+              <span className="text-fnm-gold"> Law Advocates LLP</span>
               <div className="text-sm font-sans font-normal text-fnm-gray-300 mt-1">
                 Commissioners for Oath & Notaries Public
               </div>
@@ -181,7 +181,7 @@ export default function Header() {
                 <div className="flex items-center justify-between mb-8">
                   <div className="text-xl font-serif font-bold">
                     <span className="text-fnm-white">FNM</span>
-                    <span className="text-fnm-gold"> Law</span>
+                    <span className="text-fnm-gold"> Law Advocates LLP</span>
                   </div>
                   <motion.button
                     onClick={() => setIsMenuOpen(false)}

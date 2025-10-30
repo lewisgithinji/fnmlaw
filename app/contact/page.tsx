@@ -115,7 +115,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeIn} className="text-center">
             <h1 className="text-4xl lg:text-6xl font-serif font-bold mb-6">
-              Contact <span className="text-fnm-gold">FNM Law Advocates</span>
+              Contact <span className="text-fnm-gold">FNM Law Advocates LLP</span>
             </h1>
             <p className="text-xl lg:text-2xl text-fnm-gray-300 max-w-4xl mx-auto leading-relaxed mb-8">
               Ready to discuss your legal needs? Our experienced team is here to provide
@@ -170,7 +170,7 @@ export default function ContactPage() {
                 <div className="contact-image-circle w-48 h-48 relative overflow-hidden">
                   <Image
                     src="/images/team/optimized/maureen-contact.jpg"
-                    alt="Maureen Auma Nekesa Nasiboye - Partner at FNM Law Advocates"
+                    alt="Maureen Auma Nekesa Nasiboye - Partner at FNM Law Advocates LLP"
                     fill
                     className="object-cover object-center"
                     quality={85}
