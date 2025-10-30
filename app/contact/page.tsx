@@ -97,7 +97,7 @@ export default function ContactPage() {
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Office Location",
-      details: ["Greyville Hub, 3rd Floor, Wing B Suite 8", "Off Eastern Bypass, Ruai", "Nairobi, Kenya"],
+      details: ["Greyville Hub, 3rd Floor, Suite B3-08", "Off Ruiru-Ruai Bypass, Ruai", "Nairobi, Kenya"],
       description: "Visit our office for in-person consultations"
     },
     {
@@ -441,7 +441,7 @@ export default function ContactPage() {
                 Visit Our Office
               </h2>
               <p className="text-fnm-gray-600 mb-8">
-                Located in the heart of Ruai, our office is easily accessible via Eastern Bypass.
+                Located in the heart of Ruai, our office is easily accessible via Ruiru-Ruai Bypass.
                 Schedule an in-person consultation for personalized legal advice.
               </p>
 

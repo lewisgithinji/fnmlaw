@@ -80,7 +80,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="hover:text-fnm-gold transition-colors duration-200"
             >
-              Ruai, Nairobi
+              Greyville Hub, Suite B3-08, Ruai
             </a>
           </div>
         </div>

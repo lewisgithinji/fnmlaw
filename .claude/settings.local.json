@@ -18,7 +18,12 @@
       "Bash(npx tsc:*)",
       "Bash(tasklist)",
       "Bash(for pid in 2212 7428 20848 20844 7720 17948 9260 17960)",
-      "Bash(echo:*)"
+      "Bash(echo:*)",
+      "Bash(git push:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []

@@ -124,7 +124,7 @@ export default function Hero() {
                     rel="noopener noreferrer"
                     className="text-fnm-gray-300 hover:text-fnm-gold transition-colors duration-200 underline decoration-fnm-gold/50 hover:decoration-fnm-gold"
                   >
-                    Greyville Hub, Ruai, Nairobi
+                    Greyville Hub, Suite B3-08, Ruai
                   </a>
                 </div>
                 <div>

@@ -98,8 +98,8 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     className="text-fnm-gray-300 hover:text-fnm-gold transition-colors duration-200 leading-relaxed block"
                   >
-                    Greyville Hub, 3rd Floor, Wing B Suite 8<br />
-                    Off Eastern Bypass, Ruai<br />
+                    Greyville Hub, 3rd Floor, Suite B3-08<br />
+                    Off Ruiru-Ruai Bypass, Ruai<br />
                     Nairobi, Kenya
                   </a>
                 </div>
@@ -134,7 +134,7 @@ export default function Footer() {
           <div className="text-center mb-8">
             <h4 className="text-2xl font-serif font-bold text-fnm-gold mb-2">Visit Our Office</h4>
             <p className="text-fnm-gray-300">
-              Located at Greyville Hub, Ruai - Easily accessible via Eastern Bypass
+              Located at Greyville Hub, Suite B3-08, Ruai - Easily accessible via Ruiru-Ruai Bypass
             </p>
           </div>
           <div className="rounded-lg overflow-hidden shadow-xl">

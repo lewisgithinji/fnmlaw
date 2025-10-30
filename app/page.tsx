@@ -4,17 +4,8 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Building2, Scale, FileText, Handshake, Gavel, Users } from 'lucide-react'
-import dynamic from 'next/dynamic'
 import Layout from '../components/layout/Layout'
 import Hero from '../components/sections/Hero'
-
-// Dynamic import for testimonials section with loading fallback
-const TestimonialsSection = dynamic(() => import('../components/sections/TestimonialsSection'), {
-  loading: () => <div className="py-20 bg-fnm-gray-50 flex items-center justify-center">
-    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-fnm-gold"></div>
-  </div>,
-  ssr: true
-})
 
 export default function HomePage() {
   const fadeIn = {
@@ -213,9 +204,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Testimonials Section */}
-      <TestimonialsSection />
     </Layout>
   )
 }

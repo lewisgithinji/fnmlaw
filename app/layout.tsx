@@ -83,7 +83,7 @@ export default function RootLayout({
     "email": "info@fnmlawadvocates.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Greyville Hub, 3rd Floor, Wing B Suite 8, Off Eastern Bypass",
+      "streetAddress": "Greyville Hub, 3rd Floor, Suite B3-08, Off Ruiru-Ruai Bypass",
       "addressLocality": "Ruai",
       "addressRegion": "Nairobi",
       "addressCountry": "Kenya"
